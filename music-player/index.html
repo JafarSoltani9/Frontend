@@ -11,8 +11,8 @@
     <div class="player">
         <div class="wrapper">
 
-            <div class="detalis">
-                <div class="new-playing">Playing 0 of 0</div>
+            <div class="details">
+                <div class="now-playing">Playing 0 of 0</div>
                 <div class="tarck-art"></div>
                 <div class="track-name">Track name</div>
                 <div class="track-artist">Artist name</div>
@@ -26,7 +26,7 @@
 
             <div class="silder-contariner">
                 <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="seek-slider" onchange="">
+                <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="">
                 <div class="volume-duration">00:00</div>
                 <i class="fa fa-volume-up"></i>
             </div>
@@ -36,22 +36,22 @@
                 <div class="random-track" onclick="">
                     <i class="fas fa-random fa-2x"></i>
                 </div>
-                <div class="random-track" onclick="">
+                <div class="prev-track" onclick="">
                     <i class="fas fa-step-backward fa-2x"></i>
                 </div>
-                <div class="random-track" onclick="">
+                <div class="playpause-track" onclick="">
                     <i class="fas fa-play-circle fa-2x"></i>
                 </div>
-                <div class="random-track" onclick="">
+                <div class="next-track" onclick="">
                     <i class="fas fa-step-forward fa-2x"></i>
                 </div>
-                <div class="random-track" onclick="">
+                <div class="repeat-track" onclick="">
                     <i class="fas fa-repeat fa-2x"></i>
                 </div>
 
             </div>
 
-            <div id="wave">
+            <div id="wave" class="loader">
                 <span class="stroke"></span>
                 <span class="stroke"></span>
                 <span class="stroke"></span>
