@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="player">
+        <div class="wrapper">
+
+            <div class="detalis">
+                <div class="new-playing">Playing 0 of 0</div>
+                <div class="tarck-art"></div>
+                <div class="track-name">Track name</div>
+                <div class="track-artist">Artist name</div>
+            </div>
+
+            <div class="silder-contariner">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <div class="silder-contariner">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="seek-slider" onchange="">
+                <div class="volume-duration">00:00</div>
+                <i class="fa fa-volume-up"></i>
+            </div>
+
+            <div class="buttons">
+
+                <div class="random-track" onclick="">
+                    <i class="fas fa-random fa-2x"></i>
+                </div>
+                <div class="random-track" onclick="">
+                    <i class="fas fa-step-backward fa-2x"></i>
+                </div>
+                <div class="random-track" onclick="">
+                    <i class="fas fa-play-circle fa-2x"></i>
+                </div>
+                <div class="random-track" onclick="">
+                    <i class="fas fa-step-forward fa-2x"></i>
+                </div>
+                <div class="random-track" onclick="">
+                    <i class="fas fa-repeat fa-2x"></i>
+                </div>
+
+            </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
